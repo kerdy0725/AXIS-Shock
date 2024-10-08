@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      .big-button {
+        font-size: 36px;    /* テキストと絵文字を大きく */
+        padding: 20px 40px; /* ボタンの上下・左右の余白を増やす */
+        border-radius: 10px; /* 角を丸くする（オプション） */
+        width:300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>アクシズ落下を阻止するMSを呼んでください</h1>
+    <button onclick="insertGM3()"  class="big-button">ジムⅢ</button><br />
+    <button onclick="insertJEGAN()"  class="big-button">ジェガン</button><br />
+    <button onclick="insertGIRA()"  class="big-button">ギラ・ドーガ</button><br />
+    <script>
+      function insertGM3() {
+        google.script.run.insertImageRandom(0);
+      }
+      function insertJEGAN() {
+        google.script.run.insertImageRandom(1);
+      }
+      function insertGIRA() {
+        google.script.run.insertImageRandom(2);
+      }
+    </script>
+  </body>
+</html>
